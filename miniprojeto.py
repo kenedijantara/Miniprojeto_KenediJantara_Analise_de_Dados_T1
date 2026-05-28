@@ -150,3 +150,18 @@ if 'CL_GENERO' in df.columns and 'CO_ID' in df.columns:
     print(compras_por_genero)
 
 print("=" * 50)
+
+# PASSO 6 - Exportação da base limpa
+print("\n[PASSO 6] Exportando arquivo final...")
+
+df.to_csv(
+    'Varejo_Limpo.csv',
+    index=False,
+    sep=';'
+)
+
+print("Arquivo Varejo_Limpo.csv salvo com sucesso!")
+
+print("=" * 50)
+print("FIM DA EXECUÇÃO")
+print("=" * 50)
